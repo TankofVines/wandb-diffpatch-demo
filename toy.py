@@ -1,7 +1,7 @@
 import wandb
 import numpy as np
 
-with wandb.init(project="wandb-diffpatch-beta") as run:
+with wandb.init(project="wandb-diffpatch-gamma") as run:
   for i in range(10000):
     wandb.log({
       "cool_metric":    np.random.uniform()*i,
