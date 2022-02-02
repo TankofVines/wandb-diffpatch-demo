@@ -6,5 +6,6 @@ with wandb.init(project="wandb-diffpatch-gamma") as run:
     wandb.log({
       "cool_metric":    np.random.uniform()*i,
       "amazing_metric": np.sin(i)*np.random.normal()*i,
-      "extraordinary_metric": np.random.binomial(i, .5)
+      "extraordinary_metric": np.random.binomial(i, .5),
+      "incredible_metric": np.random.poisson(1, i)
     })
